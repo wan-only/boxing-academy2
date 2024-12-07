@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.login-container {
+    display: flex;
+    width: 1000px;
+    max-width: 1000px;
+    height: 80vh;
+    background-color: #1E1E1E;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-image {
+    flex: 1;
+    background-image: url('asset/loginbg.jpg');
+    background-size: 150%;
+    position: relative;
+}
+.login-form {
+    flex: 1;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #202124;
+}
+
+.back-button {
+    color: #888;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #888;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+input[type="email"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #888;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #185abc;
+}
+
+.login-form p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-form p a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+

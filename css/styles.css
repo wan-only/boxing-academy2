@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 10px 90px;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+nav .profile-img {
+  height: 100px;
+  width: 100px;
+}
+
+nav .profile-img:hover {
+  transform: scale(1.1);
+}
+
+nav .profile-img:active {
+  transform: scale(0.95); /* Mengecilkan sedikit */
+}
+
+/* Dropdown menu hidden by default */
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 120%; /* Adjust to position the dropdown below the image */
+  right: 0;
+  background-color: #282c34;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+}
+
+nav .dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .dropdown-menu ul li {
+  padding: 8px 16px;
+}
+
+nav .dropdown-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown-menu ul li a:hover {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+nav .logo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;  
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 1000px;
+  padding: 0;
+  gap: 20px;
+}
+
+nav ul li {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  background: #fff;
+  transition: 0.3s;
+}
+
+section {
+  background: url(asset/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 93, 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  height: 100vh;
+}
+
+.hero-section h1 {
+  color: whitesmoke;
+  font-size: 5rem;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.hero-section span {
+  color: aliceblue;
+  font-size: 5rem;
+}
+.button-container {
+  display: flex;
+  flex-direction: initial;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.center-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.center-button:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+.text-bottom {
+  display: flow-root;
+  background-color: #000;
+  min-height: 100px;
+}
+
+.text-bottom h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-info {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-item {
+  border: 1px solid #f39c12;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.contact-item i {
+  font-size: 2.5rem;
+  color: #f39c12;
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.fade-text {
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
+}
+
+.fade-text.hidden {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 50px;
+    height: 70px;
+  }
+
+  nav .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+  }
+
+  nav ul li a {
+    line-height: 70px;
+    font-size: 12px;
+  }
+
+  section {
+    min-height: 100vhpx;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .center-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 10px 20px;
+    height: 60px;
+  }
+
+  nav .logo {
+    font-size: 16px;
+    float: left;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    line-height: 60px;
+    font-size: 10px;
+  }
+
+  section {
+    min-height: 100vh;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .center-button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
