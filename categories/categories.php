@@ -21,7 +21,7 @@ $result = mysqli_query($koneksi, $query);
             </div>
             <ul>
                 <li><a href="../admin.php">Dashboard</a></li>
-                <li><a href="#">Classes</a></li>
+                <li><a href="../clases-admin/clases-admin.php">Classes</a></li>
                 <li><a href="categories.php">Categories</a></li>
                 <li><a href="../transaction/transaction.php">Transaction</a></li>
                 <li><a href="../index.php">Log out</a></li>
